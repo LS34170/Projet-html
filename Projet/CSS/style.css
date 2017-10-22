@@ -140,7 +140,7 @@ nav a {
 }
 
 #menuToggle input:checked ~ span:nth-last-child(2) {
-	transform:rotate(90deg) translate(-18px, 0px);
+	transform:rotate(90deg) translate(-17px, 0px);
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3) {
