@@ -63,61 +63,67 @@
 		</span>
 		
 		<span>
-		<label for="prenom">Prénom :</label>
-       <input class=input type="text" name="prenom" id="prenom" />
+		<label for="prenom">Prénom* :</label>
+       <input required class=input type="text" name="prenom" id="prenom" />
 	   </span>
 	   
 	   <span>
-       <label for="nom">Nom :</label>
-       <input class=input type="text" name="nom" id="nom" />
+       <label for="nom">Nom* :</label>
+       <input required class=input type="text" name="nom" id="nom" />
 		</span>
 		<span>
-	   <label for="anniv">Date de naissance :</label> 
-	   <input class=input type="date" name="bday">
+	   <label for="anniv">Date de naissance* :</label> 
+	   <input required class=input type="date" name="bday">
 	   </span>
 	   
 	   <span>
-	   <label for="adresse">Adresse :</label>
-       <input class=input type="text" name="adresse" id="adresse" />
+	   <label for="adresse">Adresse* :</label>
+       <input required class=input type="text" name="adresse" id="adresse" />
 	   </span>
 	   
 	   <span>
-	   <label for="postale">Code postale :</label>
-	   <input class=input type="text" name="postale" maxlength="5">
+	   <label for="postale">Code postale* :</label>
+	   <input required class=input type="text" name="postale" maxlength="5">
 	   </span>
 	   
 	   <span>
-	   <label for="ville">Ville :</label>
-       <input class=input placeholder="Paris" type="text" name="ville" id="ville" />
+	   <label for="ville">Ville* :</label>
+       <input required class=input placeholder="Paris" type="text" name="ville" id="ville" />
 		</span>
 		
 		<span>
-       <label for="email">Adresse email :</label>
-       <input class=input placeholder="yourmail@domain.com" type="email" name="email" id="email" />
+       <label for="email">Adresse email* :</label>
+       <input required class=input placeholder="yourmail@domain.com" type="email" name="email" id="email" />
 	   </span>
 	   
 	   <span>
-	   <label for="cemail">Confirmer email :</label>
-       <input class=input type="email" name="cemail" id="cemail" />
+	   <label for="cemail">Confirmer email* :</label>
+       <input required class=input type="email" name="cemail" id="cemail" />
 	   </span>
 	   
 	   <span>
-	   <label for="id_phone">Téléphone :</label>
-	   <input class=input type="text" name="telephone" maxlength="15">
+	   <label for="id_phone">Téléphone* :</label>
+	   <input required class=input type="text" name="telephone" maxlength="15">
 	   </span>
 	   
 	   <span>
-	   <label for="nationalité">Nationalité :</label>
-	   <input class=input placeholder="Française" type="text" name="nationalité">
+	   <label for="nationalité">Nationalité* :</label>
+	   <input required class=input placeholder="Française" type="text" name="nationalité">
 	   </span>
 	   
    </fieldset>
  
    <fieldset class=formulaire>
        <legend>FORMATION</legend> <!-- Titre du fieldset -->
- 
-       <label for="etudes">Niveau d'études :</label>
-	   <select name="nom" size="1">
+		
+		<span>
+		<label for="etudiant">Etudiant :</label>
+		<input type="checkbox" name="etudiant">
+		</span>
+		
+		<span>
+       <label for="etudes">Niveau d'études* :</label>
+	   <select required name="nom" size="1">
 			<option value=0>Sans diplôme</option>
 			<option value=1>Brevet</option>
 			<option value=2 selected>Bac</option>
@@ -125,13 +131,52 @@
 			<option value=4>Bac + 5</option>
 			<option value=5>> Bac + 5</option>
 		</select>
+		</span>
 		
+		<span>
 		<label for="diplôme">Dernier diplôme obtenu :</label>
 		<input type="text" name="diplôme">
+		</span>
+		
+		<span>
 		<label for="annee">Année :</label>
 	   <input type="text" name="annee" maxlength="4">
-       
+       </span>
+	   
+	   <span>
+	   <label for="langues">Anglais* :</label>
+	   <select required name="langues" size="1">
+			<option value=0>Maternelle</option>
+			<option value=1>Bilingue</option>
+			<option value=2>Courant</option>
+			<option value=3 selected>Moyen</option>
+			<option value=4>Débutant</option>
+			<option value=5>Non parlé</option>
+		</select>
+	   </span>
+	   
    </fieldset>
+   
+   <fieldset class=formulaire>
+       <legend>DIVERS</legend> <!-- Titre du fieldset -->
+		
+		<textarea name="textarea"
+				rows="10" cols="50" placeholder="Des remarques."></textarea>
+		
+		<span>
+		<label for="cv">CV* :</label>
+		<input required type="file" name="cv"/>
+		</span>
+		
+		<span>
+		<label for="lettre">Lettre de motivation :</label>
+		<input type="file" name="lettre"/>
+		</span>
+
+		<input type="submit" value="Envoyer">
+		
+   </fieldset>
+   
 </form>
 				
 			</main>
