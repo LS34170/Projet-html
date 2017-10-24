@@ -28,7 +28,7 @@ footer {
 	display: block;
 	background-color:#f7f7f7;
 	padding:2%;
-	height:15vh;
+	height:15%;
 }
 
 h1 {
@@ -231,6 +231,8 @@ nav a {
 	right: 0;
 	text-align:center;
 	padding: 1.5vh;
+	background-color: ivory;
+    border-top: 2px solid grey;
 }
 #postuler > a {
 	border: 2px solid black;
@@ -238,4 +240,15 @@ nav a {
 	background-color:red;
 
 }
+span {
+	text-align: -webkit-left;
+}
+.formulaire {
+	display: flex;
+	flex-direction: column;
+}
+.input {
+	width:25%;
+}
+
 
