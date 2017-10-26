@@ -18,7 +18,7 @@ body {
 	font-size:120%;
 	display: flex;
 	min-height: 100vh;
-	flex-direction: column;
+	flex-direction: column;Nouveau dossierEn p
 }
 
 footer {
@@ -28,7 +28,7 @@ footer {
 	display: block;
 	background-color:#f7f7f7;
 	padding:2%;
-	height:15%;
+	height:15vh;
 }
 
 h1 {
@@ -72,6 +72,7 @@ nav {
 	position:relative;
 	font-size:110%;
 	box-shadow: 0px 2px 10px #666666;
+	border-radius:0px 0px 5px 5px;
 }
 
 nav div {
@@ -93,6 +94,7 @@ nav a {
 	display:none;
 	width:100%;
 	top:100%;
+	border-radius: 0px 0px 5px 5px;
 	box-shadow:8px 8px 15px -10px #666666,-15px 8px 16px -10px #666666;
 	color:#CFD1ED;
 }
@@ -222,7 +224,7 @@ nav a {
 		flex-direction:none;
 	}
 }
-#postuler {
+#postuler {En p
 	position:fixed;
 	bottom: 0;
 	left: 0;
@@ -238,17 +240,29 @@ nav a {
 	background-color:red;
 
 }
-span {
-	text-align: -webkit-left;
-}
-.formulaire {
-	display: flex;
-	flex-direction: column;
-}
-.input {
-	position:absolute;
-	right:35%;
-	width:25%;
-}
 
+.answer{
+		text-align:left;
+		font-size:100%;
+		color:#868e96;
+		display: flex;
+		flex-direction:column;
+		background-color:#f7f7f7;
+		padding:2%;
+		height:160vh;
+}
+.answer1:nth-of-type(2n){
+	background:yellow;
+}
+.answer1:nth-of-type(2n+1){
+	background:pink;
+}
+.answer p{
+	font-size:100%;
+	color:brown;
+	margin:0px 10px 15px 10px;	
+}
+.answer a{
+	color:red;
+}
 
